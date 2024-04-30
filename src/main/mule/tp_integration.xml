@@ -127,7 +127,8 @@ output application/json
         <logger level="INFO" message="get:\syncAverage:tp_integration-config" />
     </flow>
     <flow name="get:\syncCasesByState:tp_integration-config">
-        <logger level="INFO" message="get:\syncCasesByState:tp_integration-config" />
+		<logger level="INFO" doc:name="Start" doc:id="9a2efa3a-8c95-4182-b404-4477e4fef7d3" message="#['Start of CovidByState']"/>
+		<logger level="INFO" message="get:\syncCasesByState:tp_integration-config" />
     </flow>
     <flow name="get:\syncCovidStats:tp_integration-config">
         <ee:transform doc:name="Transform Message">
