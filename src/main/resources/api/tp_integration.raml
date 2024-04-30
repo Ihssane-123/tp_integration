@@ -1,0 +1,64 @@
+#%RAML 1.0
+title: tp_integration
+version: 1.0
+
+/syncCovidStats:
+  displayName: Accounts
+  get:
+    description: Get a list of all accounts
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              [
+    {
+    "date": 0,
+    "states": 0,
+    "positive": 0,
+    "negative": 0,
+    "pending": 0,
+    "hospitalizedCurrently": 0,
+    "hospitalizedCumulative": 0,
+    "inIcuCurrently": 0,
+    "inIcuCumulative": 0,
+    "onVentilatorCurrently": 0,
+    "onVentilatorCumulative": 0,
+    "dateChecked": "2021-03-07T24:00:00Z",
+    "death": 0,
+    "hospitalized": 0,
+    "totalTestResults": 0,
+    "lastModified": "2021-03-07T24:00:00Z",
+    "recovered": null,
+    "total": 0,
+    "posNeg": 0,
+    "deathIncrease": 0,
+    "hospitalizedIncrease": 0,
+    "negativeIncrease": 0,
+    "positiveIncrease": 0,
+    "totalTestResultsIncrease": 0,
+    "hash": "a80d0063822e251249fv9a44730c49cb23defd83"
+  },
+]
+
+/syncAverage:
+  displayName: Accounts
+  get:
+    description: Get a list of all accounts
+    responses:
+      200:
+        body:
+          application/json:
+
+
+/syncCasesByState:
+  displayName: Accounts
+  get:
+    description: Get a list of all accounts
+    responses:
+      200:
+        body:
+          application/json:
+
+
+ 
