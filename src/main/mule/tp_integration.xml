@@ -124,7 +124,8 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\syncAverage:tp_integration-config">
-        <logger level="INFO" message="get:\syncAverage:tp_integration-config" />
+        <logger level="INFO" doc:name="Start" doc:id="456c182d-fcec-44e8-8b94-26c17e234fb7" message='#["Start Average"]'/>
+		<logger level="INFO" message="get:\syncAverage:tp_integration-config" />
     </flow>
     <flow name="get:\syncCasesByState:tp_integration-config">
         <logger level="INFO" message="get:\syncCasesByState:tp_integration-config" />
