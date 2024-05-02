@@ -27,24 +27,25 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.7.1</version>
+				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				  <cloudhub2Deployment>
-					<uri>https://anypoint.mulesoft.com</uri>
-					<provider>MC</provider>
-					<environment>${environment}</environment>
-					<target>${targetName}</target>
-					<muleVersion>${muleVersion}</muleVersion>
-					<username>${user}</username>
-					<password>${pass}</password>
-					<applicationName>${appName}</applicationName>
-					<replicas>1</replicas>
-					<vCores>1</vCores>
-					
-				  </cloudhub2Deployment>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com/</uri>
+						<muleVersion>${mule.version}</muleVersion>
+						<username>${cloud.user}</username>
+						<password>${cloud.password}</password>
+						<applicationName>${cloudhubAppName}</applicationName>
+						<environment>${cloud.env}</environment>
+						<target>${cloud.targetName}</target>
+						<vCores>1</vCores>
+						<properties>
+							<key>value</key>
+						</properties>
+						
+					</cloudHubDeployment>
 				</configuration>
-			  </plugin>
+			</plugin>
 		</plugins>
 	</build>
 
