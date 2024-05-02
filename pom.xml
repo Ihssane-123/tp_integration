@@ -37,8 +37,8 @@
 						<password>${cloud.password}</password>
 						<applicationName>${cloudhubAppName}</applicationName>
 						<environment>${cloud.env}</environment>
-						<target>${cloud.targetName}</target>
-						<vCores>1</vCores>
+						
+						
 						<properties>
 							<key>value</key>
 						</properties>
