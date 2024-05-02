@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>tp_integration</artifactId>
+	<artifactId>tpintegration</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
@@ -37,8 +37,6 @@
 						<password>${cloud.password}</password>
 						<applicationName>${cloudhubAppName}</applicationName>
 						<environment>${cloud.env}</environment>
-						
-						
 						<properties>
 							<key>value</key>
 						</properties>
