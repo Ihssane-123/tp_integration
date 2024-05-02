@@ -33,14 +33,14 @@
 				  <cloudhub2Deployment>
 					<uri>https://anypoint.mulesoft.com</uri>
 					<provider>MC</provider>
-					<environment>dev</environment>
-					
-					<muleVersion>4.6.1</muleVersion>
-					<username>ihssane1</username>
-					<password>Sounatopo5</password>
-					<applicationName>tp_integration</applicationName>
+					<environment>${environment}</environment>
+					<target>${targetName}</target>
+					<muleVersion>${muleVersion}</muleVersion>
+					<username>${user}</username>
+					<password>${pass}</password>
+					<applicationName>${appName}</applicationName>
 					<replicas>1</replicas>
-					<vCores>0.1</vCores>
+					<vCores>1</vCores>
 					
 				  </cloudhub2Deployment>
 				</configuration>
